@@ -45,10 +45,10 @@ export default function KofiToast() {
             />
           </div>
           <div className="flex flex-col">
-            <span className="text-white font-bold">
+            <span className="font-bold" style={{ color: "var(--text)" }}>
               Support on Ko-fi
             </span>
-            <span className="text-white/60 text-sm">
+            <span className="text-sm" style={{ color: "var(--text-muted)" }}>
               Buy me a coffee
             </span>
           </div>

@@ -59,7 +59,7 @@ export default function WorkedFor() {
                 return (
                   <div key={index} className="mx-8">
                     <div
-                      className="relative w-24 h-24 md:w-32 md:h-32 overflow-hidden transition-opacity duration-300 hover:opacity-80"
+                      className="relative w-24 h-24 md:w-32 md:h-32 overflow-hidden rounded-lg bg-[var(--surface)] transition-opacity duration-300 hover:opacity-80"
                       style={{ border: "1px solid var(--border)" }}
                     >
                       {link ? (
@@ -74,7 +74,8 @@ export default function WorkedFor() {
                             alt={imageName}
                             width={128}
                             height={128}
-                            className="object-cover w-full h-full"
+                            className="h-full w-full object-cover"
+                            unoptimized
                           />
                         </a>
                       ) : (
@@ -83,7 +84,8 @@ export default function WorkedFor() {
                           alt={imageName}
                           width={128}
                           height={128}
-                          className="object-cover w-full h-full"
+                          className="h-full w-full object-cover"
+                          unoptimized
                         />
                       )}
                     </div>

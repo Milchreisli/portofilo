@@ -18,7 +18,7 @@ export default function Footer() {
             className="text-xs font-mono tracking-wide"
             style={{ color: "var(--text-faint)" }}
           >
-            Jeongwon MSE Inh. Fabrice Weigel · 2025-2026 Copyright © All rights reserved.
+            © 2025-2026 Jeongwon MSE. All rights reserved.
           </span>
           <div className="flex items-center gap-8">
             <Link

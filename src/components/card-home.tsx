@@ -14,8 +14,6 @@ import Image from "next/image";
 
 export const ImageIcons = {
   foundationlabs: "/icons/foundationlabs.png",
-  biogg: "/icons/biogg.png",
-  nrc: "/icons/nrc.png",
   cutecraft: "/icons/cutecraft-icon.png",
 };
 

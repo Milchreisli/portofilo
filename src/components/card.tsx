@@ -77,7 +77,7 @@ export default function Card({
   }, [mousePosition, isHovered]);
 
   const commonCardProps = {
-    className: `${archived ? "filter grayscale saturate-50 brightness-90 opacity-85 group-hover:grayscale-0 group-hover:saturate-100 group-hover:brightness-100 group-hover:opacity-100" : ""} relative p-4 overflow-hidden transition-all duration-300 group h-full`,
+    className: `${archived ? "filter grayscale saturate-50 brightness-90 opacity-85 group-hover:grayscale-0 group-hover:saturate-100 group-hover:brightness-100 group-hover:opacity-100" : ""} relative overflow-hidden rounded-2xl p-4 transition-all duration-300 group h-full`,
     onMouseMove: handleMouseMove,
     onMouseEnter: handleMouseEnter,
     onMouseLeave: handleMouseLeave,
@@ -110,8 +110,8 @@ export default function Card({
           <div
             className={`mb-3 transition-colors duration-300 ${
               archived
-                ? "text-zinc-500 group-hover:text-white"
-                : "text-zinc-400 group-hover:text-white"
+                ? "text-zinc-500 group-hover:text-[var(--text)]"
+                : "text-[var(--text-muted)] group-hover:text-[var(--text)]"
             }`}
           >
             {icon}
@@ -121,8 +121,8 @@ export default function Card({
           <h3
             className={`text-lg font-medium transition-colors duration-300 ${
               archived
-                ? "text-zinc-300 group-hover:text-white"
-                : "text-white group-hover:text-white"
+                ? "text-zinc-300 group-hover:text-[var(--text)]"
+                : "text-[var(--text)] group-hover:text-[var(--text)]"
             }`}
           >
             {title}
@@ -137,7 +137,7 @@ export default function Card({
           )}
         </div>
         <p
-          className={`text-sm leading-relaxed transition-colors duration-300 ${archived ? "text-zinc-500 group-hover:text-zinc-300" : "text-zinc-400 group-hover:text-zinc-300"}`}
+          className={`text-sm leading-relaxed transition-colors duration-300 ${archived ? "text-zinc-500 group-hover:text-[var(--text-muted)]" : "text-[var(--text-muted)] group-hover:text-[var(--text-muted)]"}`}
         >
           {description}
         </p>

@@ -4,6 +4,7 @@ import { JetBrains_Mono, Big_Shoulders } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
 import KofiToast from "@/components/kofi-toast";
+import SakuraBackground from "@/components/sakura-background";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -18,7 +19,7 @@ const bigShoulders = Big_Shoulders({
 });
 
 export const metadata: Metadata = {
-  title: "Milchreisli - 2D Designer & Mini-Pixel Artist",
+  title: "Milchreisli",
   description: "Personal Dev Portfolio of Milchreisli, a 2D designer and mini-pixel artist.",
   icons: {
     icon: "emojis/kuromi_love.gif",
@@ -41,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         <link rel="icon" href="emojis/kuromi_love.gif" type="image/gif" />
       </head>
@@ -85,10 +86,11 @@ export default function RootLayout({
         </div>
 
         <div className="relative z-10 min-h-screen flex flex-col">
-          <main className="flex-1">{children}</main>
+          <SakuraBackground />
+          <main className="relative z-10 flex-1">{children}</main>
           <Footer />
         </div>
-        
+
         <KofiToast />
       </body>
     </html>

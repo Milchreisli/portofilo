@@ -25,13 +25,13 @@ export default function AboutSection({ skills }: AboutSectionProps) {
           <p className="font-mono font-light" style={{ color: "var(--text-muted)" }}>
             Currently working on{" "}
             <a
-              href="https://norisk.gg"
+              href="https://cutecraft.net"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-opacity duration-200 hover:opacity-70"
               style={{ color: "var(--accent)" }}
             >
-              NoRisk Client
+              CuteCraft
             </a>
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function AboutSection({ skills }: AboutSectionProps) {
           <div className="section-rule mb-6" />
           <div className="flex flex-wrap gap-6">
             <a
-              href="https://discord.com/users/787306646417571860"
+              href="https://discord.com/users/829017924529946624"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm font-mono transition-opacity duration-200 hover:opacity-60"
@@ -56,7 +56,7 @@ export default function AboutSection({ skills }: AboutSectionProps) {
               Discord
             </a>
             <a
-              href="https://github.com/S42yt"
+              href="https://github.com/milchreisli"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm font-mono transition-opacity duration-200 hover:opacity-60"

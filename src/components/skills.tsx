@@ -23,7 +23,8 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
             <img
               src={skill.icon}
               alt={skill.name}
-              className="w-4 h-4 object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-200"
+              className="w-4 h-4 object-contain transition-opacity duration-200"
+              style={{ filter: "brightness(0) saturate(100%)" }}
             />
             <span
               className="text-sm font-mono transition-colors duration-200 group-hover:text-[var(--accent)]"
