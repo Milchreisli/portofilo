@@ -13,7 +13,7 @@ export default function Hero() {
         <h1
           className="mb-8 font-display font-black leading-[0.85] tracking-tight"
           style={{
-            fontSize: "clamp(6rem, 11.5vw, 15rem)",
+            fontSize: "clamp(6rem, 11.5vw, 6rem)",
             color: "var(--text)",
           }}
         >
