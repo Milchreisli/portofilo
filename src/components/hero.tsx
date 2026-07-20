@@ -4,7 +4,7 @@ export default function Hero() {
 
       <div className="relative z-10">
         <p
-          className="mb-6 text-xs uppercase tracking-[0.585em] font-mono"
+          className="mb-6 text-xs uppercase tracking-[0.3em] font-mono"
           style={{ color: "var(--text)" }}
         >
           2D-Designer · Mini-Pixel-Artist · UI · Policy & Document Management
@@ -13,7 +13,7 @@ export default function Hero() {
         <h1
           className="mb-8 font-display font-black leading-[0.85] tracking-tight"
           style={{
-            fontSize: "clamp(6rem, 11.5vw, 6rem)",
+            fontSize: "clamp(6rem, 20vw, 8rem)",
             color: "var(--text)",
           }}
         >
