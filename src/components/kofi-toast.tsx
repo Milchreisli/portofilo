@@ -32,7 +32,7 @@ export default function KofiToast() {
         </button>
 
         <a
-          href="https://ko-fi.com/G2G21YPX94"
+          href="https://ko-fi.com/milchreisli"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 outline-none"

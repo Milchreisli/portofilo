@@ -24,7 +24,7 @@ export default function ContactPage() {
 
       <div className="space-y-0">
         <a
-          href="https://discord.com/users/787306646417571860"
+          href="https://discord.com/users/829017924529946624"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-between py-5 transition-opacity duration-200 hover:opacity-60"
@@ -44,7 +44,7 @@ export default function ContactPage() {
         </a>
 
         <a
-          href="https://github.com/S42yt"
+          href="https://github.com/milchreisli"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-between py-5 transition-opacity duration-200 hover:opacity-60"
@@ -64,7 +64,7 @@ export default function ContactPage() {
         </a>
 
         <a
-          href="mailto:songoku42@outlook.de?subject=Hello%20from%20your%20portfolio&body=Hi%20there,%0D%0A%0D%0AI%20found%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch!"
+          href="mailto:hello@koro-manga.de?subject=Hello%20from%20your%20portfolio&body=Hi%20there,%0D%0A%0D%0AI%20found%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch!"
           className="flex items-center justify-between py-5 transition-opacity duration-200 hover:opacity-60"
           style={{ borderBottom: "1px solid var(--border-subtle)" }}
         >

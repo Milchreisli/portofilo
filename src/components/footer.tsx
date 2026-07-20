@@ -18,19 +18,16 @@ export default function Footer() {
             className="text-xs font-mono tracking-wide"
             style={{ color: "var(--text-faint)" }}
           >
-            Musa Bostanci · 2025 -2026 Copyright © All rights reserved.
+            Jeongwon MSE Inh. Fabrice Weigel · 2025-2026 Copyright © All rights reserved.
           </span>
           <div className="flex items-center gap-8">
-            <a
-              href="https://discord.gg/wtbcaw8AsT"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/imprint"
               className="flex items-center gap-2 transition-opacity duration-200 hover:opacity-60"
               style={{ color: "var(--text-muted)" }}
             >
-              <FontAwesomeIcon icon={faDiscord} className="w-4 h-4" />
-              <span className="text-sm font-mono">Discord</span>
-            </a>
+              <span className="text-sm font-mono">Imprint</span>
+            </Link>
 
             <Link
               href="/contact"

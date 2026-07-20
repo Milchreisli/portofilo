@@ -14,7 +14,7 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
         className="text-xs tracking-[0.3em] uppercase font-mono mb-5"
         style={{ color: "var(--text-faint)" }}
       >
-        Stack
+        Skills
       </p>
       <div className="flex flex-wrap gap-x-7 gap-y-4">
         {skills.map((skill) => (
@@ -26,7 +26,7 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
               className="w-4 h-4 object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-200"
             />
             <span
-              className="text-sm font-mono transition-colors duration-200 group-hover:text-[oklch(72%_0.014_285)]"
+              className="text-sm font-mono transition-colors duration-200 group-hover:text-[var(--accent)]"
               style={{ color: "var(--text-muted)" }}
             >
               {skill.name}

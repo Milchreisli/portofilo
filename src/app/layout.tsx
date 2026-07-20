@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Big_Shoulders } from "next/font/google";
+// @ts-ignore: Allow importing global CSS without type declarations
 import "./globals.css";
 import Footer from "@/components/footer";
 import KofiToast from "@/components/kofi-toast";
@@ -17,8 +18,8 @@ const bigShoulders = Big_Shoulders({
 });
 
 export const metadata: Metadata = {
-  title: "S42 and Friends",
-  description: "Personal Dev Portfolio of S42",
+  title: "Milchreisli - 2D Designer & Mini-Pixel Artist",
+  description: "Personal Dev Portfolio of Milchreisli, a 2D designer and mini-pixel artist.",
   icons: {
     icon: "emojis/kuromi_love.gif",
     shortcut: "emojis/kuromi_love.gif",
@@ -52,7 +53,7 @@ export default function RootLayout({
             className="absolute inset-0 pointer-events-none"
             style={{
               background:
-                "radial-gradient(ellipse 100% 60% at 50% -10%, oklch(22% 0.08 288) 0%, transparent 60%)",
+                "radial-gradient(ellipse 100% 60% at 50% -10%, color-mix(in srgb, var(--accent) 28%, transparent) 0%, transparent 60%)",
             }}
           />
           <div
@@ -63,7 +64,7 @@ export default function RootLayout({
               top: "10%",
               left: "60%",
               background:
-                "radial-gradient(circle, oklch(18% 0.06 300) 0%, transparent 70%)",
+                "radial-gradient(circle, color-mix(in srgb, var(--accent) 20%, transparent) 0%, transparent 70%)",
               filter: "blur(80px)",
               opacity: 0.7,
             }}
@@ -76,7 +77,7 @@ export default function RootLayout({
               top: "30%",
               left: "-10%",
               background:
-                "radial-gradient(circle, oklch(16% 0.05 275) 0%, transparent 70%)",
+                "radial-gradient(circle, color-mix(in srgb, var(--accent) 17%, transparent) 0%, transparent 70%)",
               filter: "blur(80px)",
               opacity: 0.6,
             }}

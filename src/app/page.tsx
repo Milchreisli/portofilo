@@ -7,36 +7,20 @@ import SkillsSection from "@/components/skills";
 export default function Home() {
   const skills = [
     {
-      name: "C",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+      name: "Aseprite",
+      icon: "https://cdn.simpleicons.org/aseprite/ffffff",
     },
     {
-      name: "TypeScript",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+      name: "Blockbench",
+      icon: "https://cdn.simpleicons.org/blockbench/ffffff",
     },
     {
-      name: "Next.js",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+      name: "Claude",
+      icon: "https://cdn.simpleicons.org/anthropic/ffffff",
     },
     {
-      name: "Astro",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/astro/astro-original.svg",
-    },
-    {
-      name: "Java",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/java/java-original.svg",
-    },
-    {
-      name: "Rust",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/rust/rust-original.svg",
-    },
-    {
-      name: "Go",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/go/go-original-wordmark.svg",
-    },
-    {
-      name: "Kotlin",
-      icon: "https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/kotlin/kotlin-original.svg",
+      name: "Google Docs",
+      icon: "https://cdn.simpleicons.org/googledocs/ffffff",
     },
   ];
 

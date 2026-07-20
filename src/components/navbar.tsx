@@ -4,6 +4,14 @@ import { useState, useEffect } from "react";
 
 export default function FloatingNav() {
   const [activeSection, setActiveSection] = useState("home");
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
+
+  useEffect(() => {
+    const savedTheme = window.localStorage.getItem("theme") as "dark" | "light" | null;
+    const initialTheme = savedTheme ?? "dark";
+    setTheme(initialTheme);
+    document.documentElement.setAttribute("data-theme", initialTheme);
+  }, []);
 
   useEffect(() => {
     const sections = ["home", "projects", "worked-for"];
@@ -41,6 +49,13 @@ export default function FloatingNav() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleTheme = () => {
+    const nextTheme = theme === "dark" ? "light" : "dark";
+    setTheme(nextTheme);
+    document.documentElement.setAttribute("data-theme", nextTheme);
+    window.localStorage.setItem("theme", nextTheme);
+  };
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -56,7 +71,19 @@ export default function FloatingNav() {
 
   return (
     <nav className="fixed right-8 top-1/2 -translate-y-1/2 z-50 hidden md:block">
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 items-end">
+        <button
+          onClick={toggleTheme}
+          className="px-3 py-2 text-[11px] font-mono uppercase tracking-[0.25em] transition-all duration-200 hover:opacity-70"
+          style={{
+            color: "var(--text)",
+            background: "var(--surface)",
+            border: "1px solid var(--border)",
+          }}
+          aria-label="Toggle theme"
+        >
+          {theme === "dark" ? "Light" : "Dark"}
+        </button>
         {navItems.map((item) => (
           <button
             key={item.id}
@@ -67,7 +94,7 @@ export default function FloatingNav() {
             <span
               className="absolute right-5 whitespace-nowrap text-xs font-mono tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-200 px-2 py-1"
               style={{
-                color: "var(--text-muted)",
+                color: "var(--text)",
                 background: "var(--surface)",
                 border: "1px solid var(--border)",
               }}

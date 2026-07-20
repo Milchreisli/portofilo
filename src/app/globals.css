@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
-@theme {
-  --font-display: var(--font-big-shoulders);
+@layer theme {
+  :root {
+    --font-display: var(--font-big-shoulders);
+  }
 }
 
 :root {
@@ -11,9 +13,20 @@
   --border: oklch(19% 0.012 285);
   --border-subtle: oklch(14% 0.009 285);
   --text: oklch(94% 0.006 285);
-  --text-muted: oklch(52% 0.012 285);
-  --text-faint: oklch(36% 0.009 285);
-  --accent: oklch(62% 0.22 290);
+  --text-muted: oklch(62% 0.012 285);
+  --text-faint: oklch(48% 0.009 285);
+  --accent: oklch(70.617% 0.23703 317.581);
+}
+
+:root[data-theme="light"] {
+  --bg: oklch(98% 0.008 285);
+  --surface: oklch(100% 0.004 285);
+  --border: oklch(86% 0.012 285);
+  --border-subtle: oklch(92% 0.008 285);
+  --text: oklch(17% 0.01 285);
+  --text-muted: oklch(32% 0.012 285);
+  --text-faint: oklch(46% 0.01 285);
+  --accent: oklch(70.617% 0.23703 317.581);
 }
 
 * {
