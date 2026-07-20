@@ -5,7 +5,7 @@ import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
 export default function WorkedFor() {
-  const pfpImages = ["clyex.png", "cutecraft.png", "yunitee.png", "foundationlabs.png"];
+  const pfpImages = ["clyex.png", "cutecraft.png", "foundationlabs.png", "yunitee.png"];
   const showGiggandSection = false;
 
   return (
@@ -48,9 +48,9 @@ export default function WorkedFor() {
                 const isFoundationLabs = imageName === "foundationlabs";
                 const getLink = () => {
                   if (isClyex) return "https://youtube.com/@clyex";
-                  if (isYunitee)  return "https://laby.net/de/@Yunitee";
                   if (isCuteCraft)  return "https://cutecraft.net/";
-                  if (isFoundationLabs) return "";
+                  if (isFoundationLabs) return;
+                  if (isYunitee)  return "https://laby.net/de/@Yunitee";
                   return null;
                 };
 
