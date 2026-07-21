@@ -12,7 +12,7 @@ export default function WhatIsCuteCraftSection() {
       <div className="space-y-4 font-mono font-light text-sm leading-[1.75]" style={{ color: "var(--text-muted)" }}>
         <p>
           <span style={{ color: "var(--text)" }}>CuteCraft</span> is a premium
-          German Minecraft CityBuild network with custom-designed gameplay
+          German Minecraft network with custom-designed gameplay
           mechanics, unique items, and a thriving community.
         </p>
         <p>

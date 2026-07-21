@@ -1,7 +1,7 @@
 const info = [
-  { label: "Server IP", value: "cutecraft.net" },
-  { label: "Version", value: "1.21.5" },
-  { label: "Game Mode", value: "CityBuild" },
+  { label: "Server IP", value: "Comming soon..." },
+  { label: "Version", value: "Comming soon..." },
+  { label: "Game Mode", value: "Comming soon..." },
 ];
 
 export default function ServerInfoSection() {

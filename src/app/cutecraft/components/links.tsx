@@ -3,9 +3,9 @@ import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const links = [
-  { label: "Website", sub: "cutecraft.net", href: "https://shop.cutecraft.net", icon: faGlobe },
-  { label: "Discord", sub: "Join the community", href: "https://discord.gg/cutecraft", icon: faDiscord },
-  { label: "GitHub", sub: "Open source projects", href: "https://github.com/CuteCraft-Network", icon: faGithub },
+  { label: "Website", sub: "cutecraft.net",  href: "", icon: faGlobe },
+  { label: "Discord", sub: "Join the community", href: "", icon: faDiscord },
+  { label: "GitHub", sub: "Open source projects", href: "", icon: faGithub },
 ];
 
 export default function CommunityLinksSection() {

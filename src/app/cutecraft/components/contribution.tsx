@@ -27,8 +27,7 @@ export default function MyRoleSection({ contributions }: MyRoleSectionProps) {
         className="text-sm font-mono font-light mb-6 max-w-xl leading-[1.75]"
         style={{ color: "var(--text-muted)" }}
       >
-        As a core member of the CuteCraft development team, I focus on web
-        development and design across multiple areas.
+        I am responsible for regulations within the CuteCraft project, ensuring that every player adheres to the rules and maintains a positive gaming environment. My role involves monitoring player behavior, addressing any violations, and implementing strategies to enhance the overall community experience. Designing User Interfaces is also a key aspect of my responsibilities, where I focus on creating intuitive and visually appealing interfaces that enhance user interaction and engagement within the game. Responsible for enhancing player experience with feedback.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0">

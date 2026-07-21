@@ -1,6 +1,6 @@
 const tech = [
-  { label: "Frontend", value: "Next.js, Astro.js" },
-  { label: "Design", value: "Aseprite, Figma" },
+  // { label: "Frontend", value: "Next.js, Astro.js" },
+  { label: "Design", value: "Aseprite" },
   { label: "Minecraft", value: "Java Plugins, Paper" },
 ];
 

@@ -16,35 +16,28 @@ export default function CuteCraftPage() {
   const myContributions = [
     {
       icon: faCode,
-      title: "Website Development",
+      title: "Policys",
       description:
-        "Building and maintaining the main CuteCraft website with modern web technologies like Next.js and Astro.js",
+        "Ensuring player safety with guidelines and regulations.",
       color: "text-blue-400",
     },
     {
       icon: faPalette,
-      title: "UI/UX Design",
+      title: "UI Design",
       description: "Designing beautiful user interfaces with custom textures",
       color: "text-pink-400",
-    },
-    {
-      icon: faGamepad,
-      title: "Item Designs",
-      description:
-        "Creating custom item designs and models for the Minecraft server",
-      color: "text-purple-400",
     },
   ];
 
   const features = [
     {
-      title: "🏗️ CityBuild Gameplay",
+      title: "🌼 Gameplay",
       description:
-        "Build your own houses, deal with other players, make your plot bigger and more unique and find new friends!",
+        "Build your own houses, structures, deal with other players, expand your plot, make it more unique and find new friends!",
     },
     {
       title: "🇩🇪 German Community",
-      description: "A welcoming German-speaking community with helpful staff",
+      description: "A welcoming German-speaking community with kind & helpful staff members",
     },
     {
       title: "⚡ Modern Infrastructure",
